@@ -1,0 +1,16 @@
+{
+  "singleQuote": true,
+  "tabWidth": 2,
+  "useTabs": false,
+  "printWidth": 100,
+  "trailingComma": "none",
+  "endOfLine": "auto",
+  "bracketSameLine": true,
+  "proseWrap": "never",
+  "bracketSpacing": true,
+  "jsxBracketSameLine": true,
+  "arrowParens": "always",
+  "importOrder": ["^(.*).scss$", "^@mui/(.*)$", "^(.*).webp|.svg$", "^(.*).json$", "^[./]"],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}

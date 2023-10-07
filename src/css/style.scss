@@ -1,0 +1,166 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+
+  .logo {
+    max-width: 152px;
+  }
+
+  .nav {
+    a {
+      margin-left: 40px;
+      color: #ffffff;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+}
+
+.grid-wrapper {
+  z-index: -1;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  transition: all 0.2s ease-in-out;
+}
+
+.grid {
+  position: relative;
+  width: 200%;
+}
+
+.hero {
+  background-image: url('../images/bg.png');
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.info {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 40px;
+  color: #fff;
+  text-align: center;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 101%;
+}
+
+.subtitle,
+.email {
+  color: #a5a8ab;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.72px;
+  text-decoration: none;
+}
+
+.email {
+  cursor: pointer;
+  color: #8fff00;
+}
+
+.label-wrapper {
+  content: '';
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.label {
+  content: '';
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.label-img {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  height: 40px;
+  transform: rotate(4deg);
+  width: 120vw;
+  background-image: url('../images/label.png');
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+
+@media (max-width: 1000px) {
+  .grid-wrapper {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 20px;
+  }
+  .title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 20px;
+  }
+  .title {
+    font-size: 44px;
+  }
+  .logo {
+    max-width: 200px;
+  }
+
+  .label-wrapper {
+    height: 64px;
+  }
+
+  .label-img {
+    bottom: 0;
+    left: 0;
+    height: 32px;
+    transform: none;
+    width: 3840px;
+    animation: slide 20s linear infinite;
+  }
+  .subtitle {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-1920px);
+  }
+}

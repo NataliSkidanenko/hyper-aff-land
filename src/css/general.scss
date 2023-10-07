@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto+Mono:wght@400;500&display=swap');
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 18px;
+  background-size: cover;
+  overflow: hidden;
+}
+
+:root {
+  --primary-color: #8fff00;
+}
+
+.container {
+  width: 100%;
+  max-width: 1206px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.between {
+  align-items: center;
+  justify-content: space-between;
+}

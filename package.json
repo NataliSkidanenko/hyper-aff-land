@@ -1,0 +1,26 @@
+{
+  "name": "hyper-aff-land",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "git@github.com:NataliSkidanenko/hyper-aff-land.git",
+  "author": "NataliSkidanenko <sni.nata102@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "dependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "module": "es6",
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "node-sass": "^9.0.0",
+    "sass": "^1.69.0",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "url-loader": "^4.1.1"
+  }
+}
