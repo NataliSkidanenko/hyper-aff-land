@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="./favicon.ico" />
+    <link rel="prelo" href="./favicon.ico" />
+    <link rel="preload" href="src/images//loader.gif" as="image" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="hyper aff. - Affiliate Marketing" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,198 +13,204 @@
     <title>hyper aff. - Top performance marketing agency</title>
   </head>
   <body>
-    <div class="success" id="success">
-      <div class="success__container">
-        <img
-          src="src/images/icon_close.svg"
-          alt="close"
-          class="success__close"
-          id="success-close" />
-        <p class="success__title">Thank you for your request!</p>
-        <p class="success__subtitle">We will try to contact you as soon as possible.</p>
-      </div>
+    <div class="loader" id="loader">
+      <img src="src/images/loader.gif" alt="loader" class="loader__image" />
     </div>
-    <header class="header">
-      <div class="container flex between">
-        <a href="/"><img src="src/images/logo.svg" alt="logo" class="logo" /></a>
-        <nav class="nav">
-          <a href="/">Home</a>
-          <a href="/contact.html">Contact</a>
-        </nav>
-      </div>
-    </header>
-    <div class="hero">
-      <div class="grid-wrapper">
-        <img src="src/images/bg-grid.svg" alt="grid" class="grid" id="grid" />
-      </div>
-      <div class="gradient-bg"></div>
-      <div class="gradient-bg-sticky"></div>
-      <div class="container flex hero__container">
-        <div class="hero__block hero__block--center">
-          <h1 class="hero__title">Top<br />performance<br />marketing<br />agency</h1>
-        </div>
-        <div class="hero__block benefits">
-          <div class="benefits__item">
-            <div class="benefits__title">10k</div>
-            <div class="benefits__subtitle">deposits monthly</div>
-          </div>
-          <div class="benefits__item">
-            <div class="benefits__title">100+</div>
-            <div class="benefits__subtitle">traffic sources</div>
-          </div>
-          <div class="benefits__item">
-            <div class="benefits__title">30+</div>
-            <div class="benefits__subtitle">partners companies</div>
-          </div>
-          <div class="benefits__item">
-            <div class="benefits__title">03</div>
-            <div class="benefits__subtitle">years on the market</div>
-          </div>
+
+    <div id="content" style="display: none">
+      <div class="success" id="success">
+        <div class="success__container">
+          <img
+            src="src/images/icon_close.svg"
+            alt="close"
+            class="success__close"
+            id="success-close" />
+          <p class="success__title">Thank you for your request!</p>
+          <p class="success__subtitle">We will try to contact you as soon as possible.</p>
         </div>
       </div>
-      <div class="label-wrapper">
-        <div class="label">
-          <div class="label-img"></div>
+      <header class="header">
+        <div class="container flex between">
+          <a href="/"><img src="src/images/logo.svg" alt="logo" class="logo" /></a>
+          <nav class="nav">
+            <a href="/">Home</a>
+            <a href="/contact.html">Contact</a>
+          </nav>
         </div>
-      </div>
-      <div class="label-wrapper-sticky">
-        <div class="label">
-          <div class="label-img"></div>
+      </header>
+      <div class="hero">
+        <div class="grid-wrapper">
+          <img src="src/images/bg-grid.svg" alt="grid" class="grid" id="grid" />
         </div>
-      </div>
-    </div>
-    <div class="info">
-      <div class="container">
-        <div class="info__bg"></div>
-        <p class="info__text">
-          Guided by best practices in the gambling industry, we provide quality traffic for iGaming
-          products and promise profitable projects for our arbitrage partners.
-        </p>
-      </div>
-    </div>
-    <div class="advantages">
-      <div class="container advantages__container">
-        <div class="advantages__item">
-          <div class="advantages__icon">
-            <img src="src/images/icon_creativity.png" alt="icon" />
+        <div class="gradient-bg"></div>
+        <div class="gradient-bg-sticky"></div>
+        <div class="container flex hero__container">
+          <div class="hero__block hero__block--center">
+            <h1 class="hero__title">Top<br />performance<br />marketing<br />agency</h1>
           </div>
-          <div class="advantages__title">Creativity</div>
-          <div class="advantages__subtitle">
-            We merge creativity and data analysis to develop unique strategies for each partner.
-          </div>
-        </div>
-        <div class="advantages__item">
-          <div class="advantages__icon"><img src="src/images/icon_quality.png" alt="icon" /></div>
-          <div class="advantages__title">Quality</div>
-          <div class="advantages__subtitle">
-            Strict vetting processes ensure high-value players for iGaming brands.
-          </div>
-        </div>
-        <div class="advantages__item">
-          <div class="advantages__icon"><img src="src/images/icon_tech.png" alt="icon" /></div>
-          <div class="advantages__title">Technologies</div>
-          <div class="advantages__subtitle">
-            Using AI-driven tools, we optimize campaigns for maximum ROI.
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="partners">
-      <div class="container">
-        <p class="partners__title">Our<br />star partners</p>
-      </div>
-      <div class="partners__carousel">
-        <div class="partners__images"></div>
-      </div>
-    </div>
-    <div class="collaboration">
-      <div class="container collaboration__container">
-        <div class="collaboration__title">
-          Teaming Up with<br />
-          the Best in the Industry
-        </div>
-        <div class="collaboration__text">
-          We are open to collaboration with arbitrage teams that can deliver large volumes of
-          quality traffic.
-        </div>
-        <div class="collaboration__button">
-          <a href="/contact.html" class="button button--white">
-            <span>Get in touch</span>
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_32_284)">
-                <path
-                  d="M16.172 11L10.808 5.63598L12.222 4.22198L20 12L12.222 19.778L10.808 18.364L16.172 13H4V11H16.172Z"
-                  fill="black" />
-              </g>
-              <defs>
-                <clipPath id="clip0_32_284">
-                  <rect width="24" height="24" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="contact">
-      <div class="container contact__container">
-        <div class="radar">
-          <div class="radar_container">
-            <img src="src/images/radar-1.svg" alt="radar" class="radar__base" />
-            <img src="src/images/radar-2.svg" alt="radar" class="radar__circle" />
-            <img src="src/images/radar-3.svg" alt="radar" class="radar__half" />
-          </div>
-        </div>
-        <p class="contact__title">Sounds interesting?<br />Contact us</p>
-        <form id="form" class="contact__form form">
-          <div class="form__block form__block--big">
-            <input
-              name="contact"
-              type="text"
-              class="form__input form__input--short"
-              placeholder="Enter your Telegram or Email"
-              required />
-            <textarea
-              name="message"
-              class="form__input form__input--message"
-              placeholder="Enter your message"></textarea>
-          </div>
-          <div class="form__block">
-            <div class="form__button">
-              <button type="submit" class="button button--green">
-                <span>Send</span>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_32_284)">
-                    <path
-                      d="M16.172 11L10.808 5.63598L12.222 4.22198L20 12L12.222 19.778L10.808 18.364L16.172 13H4V11H16.172Z"
-                      fill="black" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_32_284">
-                      <rect width="24" height="24" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </button>
+          <div class="hero__block benefits">
+            <div class="benefits__item">
+              <div class="benefits__title">10k</div>
+              <div class="benefits__subtitle">deposits monthly</div>
+            </div>
+            <div class="benefits__item">
+              <div class="benefits__title">100+</div>
+              <div class="benefits__subtitle">traffic sources</div>
+            </div>
+            <div class="benefits__item">
+              <div class="benefits__title">30+</div>
+              <div class="benefits__subtitle">partners companies</div>
+            </div>
+            <div class="benefits__item">
+              <div class="benefits__title">03</div>
+              <div class="benefits__subtitle">years on the market</div>
             </div>
           </div>
-        </form>
+        </div>
+        <div class="label-wrapper">
+          <div class="label">
+            <div class="label-img"></div>
+          </div>
+        </div>
+        <div class="label-wrapper-sticky">
+          <div class="label">
+            <div class="label-img"></div>
+          </div>
+        </div>
       </div>
+      <div class="info">
+        <div class="container">
+          <div class="info__bg"></div>
+          <p class="info__text">
+            Guided by best practices in the gambling industry, we provide quality traffic for
+            iGaming products and promise profitable projects for our arbitrage partners.
+          </p>
+        </div>
+      </div>
+      <div class="advantages">
+        <div class="container advantages__container">
+          <div class="advantages__item">
+            <div class="advantages__icon">
+              <img src="src/images/icon_creativity.png" alt="icon" />
+            </div>
+            <div class="advantages__title">Creativity</div>
+            <div class="advantages__subtitle">
+              We merge creativity and data analysis to develop unique strategies for each partner.
+            </div>
+          </div>
+          <div class="advantages__item">
+            <div class="advantages__icon"><img src="src/images/icon_quality.png" alt="icon" /></div>
+            <div class="advantages__title">Quality</div>
+            <div class="advantages__subtitle">
+              Strict vetting processes ensure high-value players for iGaming brands.
+            </div>
+          </div>
+          <div class="advantages__item">
+            <div class="advantages__icon"><img src="src/images/icon_tech.png" alt="icon" /></div>
+            <div class="advantages__title">Technologies</div>
+            <div class="advantages__subtitle">
+              Using AI-driven tools, we optimize campaigns for maximum ROI.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="partners">
+        <div class="container">
+          <p class="partners__title">Our<br />star partners</p>
+        </div>
+        <div class="partners__carousel">
+          <div class="partners__images"></div>
+        </div>
+      </div>
+      <div class="collaboration">
+        <div class="container collaboration__container">
+          <div class="collaboration__title">
+            Teaming Up with<br />
+            the Best in the Industry
+          </div>
+          <div class="collaboration__text">
+            We are open to collaboration with arbitrage teams that can deliver large volumes of
+            quality traffic.
+          </div>
+          <div class="collaboration__button">
+            <a href="/contact.html" class="button button--white">
+              <span>Get in touch</span>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_32_284)">
+                  <path
+                    d="M16.172 11L10.808 5.63598L12.222 4.22198L20 12L12.222 19.778L10.808 18.364L16.172 13H4V11H16.172Z"
+                    fill="black" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_32_284">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="contact">
+        <div class="container contact__container">
+          <div class="radar">
+            <div class="radar_container">
+              <img src="src/images/radar-1.svg" alt="radar" class="radar__base" />
+              <img src="src/images/radar-2.svg" alt="radar" class="radar__circle" />
+              <img src="src/images/radar-3.svg" alt="radar" class="radar__half" />
+            </div>
+          </div>
+          <p class="contact__title">Sounds interesting?<br />Contact us</p>
+          <form id="form" class="contact__form form">
+            <div class="form__block form__block--big">
+              <input
+                name="contact"
+                type="text"
+                class="form__input form__input--short"
+                placeholder="Enter your Telegram or Email"
+                required />
+              <textarea
+                name="message"
+                class="form__input form__input--message"
+                placeholder="Enter your message"></textarea>
+            </div>
+            <div class="form__block">
+              <div class="form__button">
+                <button type="submit" class="button button--green">
+                  <span>Send</span>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_32_284)">
+                      <path
+                        d="M16.172 11L10.808 5.63598L12.222 4.22198L20 12L12.222 19.778L10.808 18.364L16.172 13H4V11H16.172Z"
+                        fill="black" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_32_284">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <footer class="footer">
+        <img src="src/images/logo-bw.svg" alt="logo" class="logo" />
+        <p>2021 &copy; All Rights Reserved.</p>
+      </footer>
     </div>
-    <footer class="footer">
-      <img src="src/images/logo-bw.svg" alt="logo" class="logo" />
-      <p>2021 &copy; All Rights Reserved.</p>
-    </footer>
     <script src="dist/bundle.js"></script>
   </body>
 </html>
