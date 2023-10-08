@@ -9,7 +9,10 @@ form.addEventListener('submit', async (e) => {
   successPopup.style.display = 'grid';
   document.body.overflow = 'hidden';
   form.reset();
-  await postData('http://localhost:3030/contact', { contact: contact, message: message });
+  await postData('https://hyper-aff-mailer.onrender.com/contact', {
+    contact: contact,
+    message: message
+  });
 });
 
 closeSuccess.addEventListener('click', () => {
