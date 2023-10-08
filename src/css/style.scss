@@ -232,8 +232,8 @@
   background-size: contain;
   background-repeat: repeat-x;
   transform: none;
-  width: 4320px;
-  animation: slide 20s linear infinite;
+  width: 6000px;
+  animation: slide 18s linear infinite;
 }
 
 .info,
@@ -657,7 +657,7 @@
     transform: translate(0);
   }
   100% {
-    transform: translate(-2160px);
+    transform: translate(-1852.2px);
   }
 }
 
