@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto+Mono:wght@400;500&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto Mono', monospace;
   background-color: #000000;
   color: #ffffff;
   font-size: 18px;
   background-size: cover;
-  overflow: hidden;
 }
 
 :root {
@@ -28,4 +31,53 @@ body {
 .between {
   align-items: center;
   justify-content: space-between;
+}
+
+.button {
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  height: 66px;
+  padding: 25px 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  outline: none;
+  &:hover {
+    svg {
+      left: 20px;
+    }
+  }
+
+  svg {
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    left: 10px;
+  }
+
+  &--white {
+    color: #000000;
+    background-color: #ffffff;
+
+    &:hover {
+      background-color: #8fff00;
+    }
+  }
+
+  &--green {
+    color: #000000;
+    background-color: #8fff00;
+    &:hover {
+      background-color: #85ea00;
+    }
+  }
+}
+
+textarea {
+  resize: none;
 }

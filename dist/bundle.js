@@ -15,7 +15,7 @@
   \**********************************/
 /***/ (() => {
 
-eval("const grid = document.getElementById('grid');\nif (document.body.scrollWidth > 1000) {\n  document.addEventListener('mousemove', (e) => {\n    grid.style.top = `${document.body.scrollHeight - e.clientY - grid.clientWidth / 2}px`;\n    grid.style.left = `${document.body.scrollWidth - e.clientX - grid.clientWidth / 2}px`;\n  });\n}\n\n\n//# sourceURL=webpack://hyper-aff-land/./src/js/grid-animation.js?");
+eval("const grid = document.getElementById('grid');\nif (document.body.scrollWidth > 1000) {\n  document.addEventListener('mousemove', (e) => {\n    grid.style.top = `${document.body.scrollWidth - e.clientY - grid.clientWidth / 2}px`;\n    grid.style.left = `${document.body.scrollWidth - e.clientX - grid.clientWidth / 2}px`;\n  });\n}\n\n\n//# sourceURL=webpack://hyper-aff-land/./src/js/grid-animation.js?");
 
 /***/ }),
 
