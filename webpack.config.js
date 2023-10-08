@@ -1,6 +1,6 @@
 module.exports = {
   entry: './src/js/main.js',
-  mode: 'development',
+  mode: 'production',
   watch: true,
   output: {
     path: `${__dirname}/dist`,
