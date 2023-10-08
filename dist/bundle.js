@@ -9,6 +9,16 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/form.js":
+/*!************************!*\
+  !*** ./src/js/form.js ***!
+  \************************/
+/***/ (() => {
+
+eval("const form = document.getElementById('form');\nconst successPopup = document.getElementById('success');\nconst closeSuccess = document.getElementById('success-close');\n\nform.addEventListener('submit', async (e) => {\n  e.preventDefault();\n  const contact = form.contact.value;\n  const message = form.message.value;\n  successPopup.style.display = 'grid';\n  document.body.overflow = 'hidden';\n  form.reset();\n  await postData('http://localhost:3030/contact', { contact: contact, message: message });\n});\n\ncloseSuccess.addEventListener('click', () => {\n  successPopup.style.display = 'none';\n  document.body.overflow = 'auto';\n});\n\nasync function postData(url, data) {\n  await fetch(url, {\n    method: 'POST',\n    headers: {\n      Accept: 'application/json',\n      'Content-Type': 'application/json'\n    },\n    body: JSON.stringify(data)\n  });\n}\n\n\n//# sourceURL=webpack://hyper-aff-land/./src/js/form.js?");
+
+/***/ }),
+
 /***/ "./src/js/grid-animation.js":
 /*!**********************************!*\
   !*** ./src/js/grid-animation.js ***!
@@ -26,7 +36,7 @@ eval("const grid = document.getElementById('grid');\nif (document.body.scrollWid
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _grid_animation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./grid-animation */ \"./src/js/grid-animation.js\");\n/* harmony import */ var _grid_animation__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_grid_animation__WEBPACK_IMPORTED_MODULE_0__);\n__webpack_require__.e(/*! import() */ \"src_css_reset_scss\").then(__webpack_require__.bind(__webpack_require__, /*! ../css/reset.scss */ \"./src/css/reset.scss\"));\n__webpack_require__.e(/*! import() */ \"src_css_general_scss\").then(__webpack_require__.bind(__webpack_require__, /*! ../css/general.scss */ \"./src/css/general.scss\"));\n__webpack_require__.e(/*! import() */ \"src_css_style_scss\").then(__webpack_require__.bind(__webpack_require__, /*! ../css/style.scss */ \"./src/css/style.scss\"));\n\n\n\n\n//# sourceURL=webpack://hyper-aff-land/./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _grid_animation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./grid-animation */ \"./src/js/grid-animation.js\");\n/* harmony import */ var _grid_animation__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_grid_animation__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./form */ \"./src/js/form.js\");\n/* harmony import */ var _form__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_form__WEBPACK_IMPORTED_MODULE_1__);\n__webpack_require__.e(/*! import() */ \"src_css_reset_scss\").then(__webpack_require__.bind(__webpack_require__, /*! ../css/reset.scss */ \"./src/css/reset.scss\"));\n__webpack_require__.e(/*! import() */ \"src_css_general_scss\").then(__webpack_require__.bind(__webpack_require__, /*! ../css/general.scss */ \"./src/css/general.scss\"));\n__webpack_require__.e(/*! import() */ \"src_css_style_scss\").then(__webpack_require__.bind(__webpack_require__, /*! ../css/style.scss */ \"./src/css/style.scss\"));\n\n\n\n\n\n//# sourceURL=webpack://hyper-aff-land/./src/js/main.js?");
 
 /***/ })
 

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./favicon.ico" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="hyper aff. - Affiliate Marketing" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" href="./logo192.png" />
+    <link rel="manifest" href="./manifest.json" />
+    <title>hyper aff. - Contact Us</title>
+  </head>
+  <body>
+    <div class="success" id="success">
+      <div class="success__container">
+        <img
+          src="src/images/icon_close.svg"
+          alt="close"
+          class="success__close"
+          id="success-close" />
+        <p class="success__title">Thank you for your request!</p>
+        <p class="success__subtitle">We will try to contact you as soon as possible.</p>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container flex between">
+        <a href="/"><img src="src/images/logo.svg" alt="logo" class="logo" /></a>
+        <nav class="nav">
+          <a href="/">Home</a>
+          <a href="/contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <div class="contact">
+      <div class="container contact__container" style="padding-top: 120px">
+        <div class="radar">
+          <div class="radar_container">
+            <img src="src/images/radar-1.svg" alt="radar" class="radar__base" />
+            <img src="src/images/radar-2.svg" alt="radar" class="radar__circle" />
+            <img src="src/images/radar-3.svg" alt="radar" class="radar__half" />
+          </div>
+        </div>
+        <p class="contact__title">Sounds interesting?<br />Contact us</p>
+        <form id="form" class="contact__form form">
+          <div class="form__block form__block--big">
+            <input
+              name="contact"
+              type="text"
+              class="form__input form__input--short"
+              placeholder="Enter your Telegram or Email"
+              required />
+            <textarea
+              name="message"
+              class="form__input form__input--message"
+              placeholder="Enter your message"></textarea>
+          </div>
+          <div class="form__block">
+            <div class="form__button">
+              <button type="submit" class="button button--green">
+                <span>Send</span>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_32_284)">
+                    <path
+                      d="M16.172 11L10.808 5.63598L12.222 4.22198L20 12L12.222 19.778L10.808 18.364L16.172 13H4V11H16.172Z"
+                      fill="black" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_32_284">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer class="footer">
+      <img src="src/images/logo-bw.svg" alt="logo" class="logo" />
+      <p>2021 &copy; All Rights Reserved.</p>
+    </footer>
+
+    <script src="dist/bundle.js"></script>
+  </body>
+</html>

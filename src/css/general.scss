@@ -21,6 +21,12 @@ body {
   max-width: 1206px;
   padding: 0 20px;
   margin: 0 auto;
+  @media (max-width: 1000px) {
+    padding: 0 45px;
+  }
+  @media (max-width: 500px) {
+    padding: 0 20px;
+  }
 }
 
 .flex {

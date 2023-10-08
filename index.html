@@ -11,11 +11,22 @@
     <title>hyper aff. - Top performance marketing agency</title>
   </head>
   <body>
+    <div class="success" id="success">
+      <div class="success__container">
+        <img
+          src="src/images/icon_close.svg"
+          alt="close"
+          class="success__close"
+          id="success-close" />
+        <p class="success__title">Thank you for your request!</p>
+        <p class="success__subtitle">We will try to contact you as soon as possible.</p>
+      </div>
+    </div>
     <header class="header">
       <div class="container flex between">
-        <img src="src/images/logo.svg" alt="logo" class="logo" />
+        <a href="/"><img src="src/images/logo.svg" alt="logo" class="logo" /></a>
         <nav class="nav">
-          <a href="#">Home</a>
+          <a href="/">Home</a>
           <a href="/contact.html">Contact</a>
         </nav>
       </div>
@@ -115,7 +126,7 @@
           quality traffic.
         </div>
         <div class="collaboration__button">
-          <a href="/contact" class="button button--white">
+          <a href="/contact.html" class="button button--white">
             <span>Get in touch</span>
             <svg
               width="24"
@@ -148,7 +159,7 @@
           </div>
         </div>
         <p class="contact__title">Sounds interesting?<br />Contact us</p>
-        <form action="" class="contact__form form">
+        <form id="form" class="contact__form form">
           <div class="form__block form__block--big">
             <input
               name="contact"
